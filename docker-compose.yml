@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  frontend:
+    build: ./frontend
+    volumes:
+      - ./frontend:/app
+      - bv_ror_node_modules:/app/node_modules
+    ports:
+      - '8080:8080'
+    tty: true
+    stdin_open: true
+    command: npm run serve
+
+volumes:
+  bv_ror_node_modules:
