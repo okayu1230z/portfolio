@@ -31,4 +31,3 @@ export default {
   props: ["works"],
 };
 </script>
-
