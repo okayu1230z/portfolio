@@ -5,6 +5,22 @@
   </div>
 </template>
 
+<script>
+export default {
+  methods: {
+    scrollIntoView(event) {
+      console.log(event);
+      event.preventDefault();
+      const href = event.target.getAttribute("href");
+      const el = href ? document.querySelector(href) : null;
+      if (el) {
+        this.$refs.content.scrollTop = el.offsetTop;
+      }
+    },
+  },
+};
+</script>
+
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scope>
 .full {

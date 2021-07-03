@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="vcenter ml-2">
     <!-- check icons this site:  https://icons.getbootstrap.com/ -->
-    <Profile :profiles="profiles" />
+    <Profile id="profile" :profiles="profiles" />
     <ProgrammingSkill :pskills="pskills" :fskills="fskills" />
     <OtherSkill :oskills="oskills" />
     <Qualification :qualifications="qualifications" />
@@ -114,34 +114,104 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.vertical >>> .venti {
+/* 小さな画面 */
+@media screen and (min-width: 300px) {
+  .vcenter {
+    width: 500px;
+    text-align: center;
+    display: inline-block;
+  }
+}
+/* 大きな画面 */
+@media screen and (min-width: 500px) {
+  .vcenter {
+    width: 900px;
+    text-align: center;
+    display: inline-block;
+  }
+}
+.vertical ::v-deep .venti {
   margin: 48px 0px 16px;
   font-size: 32px;
   font-weight: bold;
 }
-.vertical >>> .grande {
+.vertical ::v-deep .grande {
   margin: 0px 0px 0px;
   font-size: 20px;
   font-weight: bold;
 }
-.vertical >>> .tall {
+.vertical ::v-deep .tall {
   margin: 0px 0px 0px;
   font-size: 16px;
   font-weight: bold;
 }
-.vertical >>> ul {
-  list-style-type: none;
-  padding: 0;
+.vertical ::v-deep .left {
+  text-align: left;
 }
-.vertical >>> li {
+.vertical ::v-deep .right {
+  text-align: right;
+}
+.vertical ::v-deep .noline {
+  display: inline;
+}
+.vertical ::v-deep ul {
+  width: 500px;
+  padding-left: 0;
+  list-style: none;
   display: inline-block;
-  margin: 0px 10px;
 }
-.vertical >>> .link {
+.vertical ::v-deep li {
+  display: flex;
+  margin: 16px 0px;
+}
+.vertical ::v-deep .link {
   transition: color 0.3s;
   font-weight: bold;
 }
-.vertical >>> .link:hover {
+.vertical ::v-deep .link:hover {
+  color: #4ab866;
+}
+.horizontal ::v-deep .venti {
+  margin: 48px 0px 16px;
+  font-size: 32px;
+  font-weight: bold;
+}
+.horizontal ::v-deep .grande {
+  margin: 0px 0px 0px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.horizontal ::v-deep .tall {
+  margin: 0px 0px 0px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.horizontal ::v-deep .left {
+  text-align: left;
+}
+.horizontal ::v-deep .right {
+  text-align: right;
+}
+.horizontal ::v-deep .noline {
+  display: inline;
+}
+.horizontal ::v-deep ul {
+  width: 500px;
+  padding-left: 0;
+  list-style: none;
+  display: inline-block;
+  text-align: left;
+}
+.horizontal ::v-deep li {
+  display: flex;
+  margin: 16px 0px;
+  display: inline;
+}
+.horizontal ::v-deep .link {
+  transition: color 0.3s;
+  font-weight: bold;
+}
+.horizontal ::v-deep .link:hover {
   color: #4ab866;
 }
 a {

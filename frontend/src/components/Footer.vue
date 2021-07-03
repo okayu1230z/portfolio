@@ -26,29 +26,6 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 48px 0px 16px;
-  font-size: 32px;
-  font-weight: bold;
-}
-h4 {
-  margin: 0px 0px 0px;
-  font-size: 20px;
-  font-weight: bold;
-}
-h5 {
-  margin: 0px 0px 0px;
-  font-size: 16px;
-  font-weight: bold;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0px 10px;
-}
 a {
   color: #4a86b8;
   font-size: 16px;
@@ -71,8 +48,8 @@ footer {
   padding: 5px;
 }
 .sns-fa {
-  font-size: 2em;
-  padding: 0.2em;
+  font-size: 32px;
+  padding: 0.2px;
   vertical-align: middle;
 }
 </style>

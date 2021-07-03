@@ -1,6 +1,6 @@
 <template>
   <div class="vertical">
-    <h3 class="venti"><b-icon-pencil-fill /> Qualification</h3>
+    <h3 class="venti left"><b-icon-pencil-fill /> Qualification</h3>
     <ul v-for="qualification in qualifications" :key="qualification.id">
       <li>
         <h5 class="tall">{{ qualification }},</h5>
