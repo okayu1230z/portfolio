@@ -40,14 +40,19 @@ export default {
       // programming lang skills
       pskills: [
         { name: "Ruby", icon: require("@/assets/png/ruby.png") },
+        { name: "JavaScript", icon: require("@/assets/png/javascript.png") },
         { name: "Python", icon: require("@/assets/png/python.png") },
+        { name: "Dart", icon: require("@/assets/png/dart.png") },
         { name: "Golang", icon: require("@/assets/png/golang.png") },
       ],
       // framework skills
       fskills: [
         { name: "Rails", icon: require("@/assets/png/rails.png") },
         { name: "Vue", icon: require("@/assets/png/vue.png") },
+        { name: "Flask", icon: require("@/assets/png/flask.png") },
+        { name: "Django", icon: require("@/assets/png/django.png") },
         { name: "Flutter", icon: require("@/assets/png/flutter.png") },
+        { name: "gin", icon: require("@/assets/png/gin.png") },
       ],
       // other skills
       oskills: [
@@ -55,11 +60,20 @@ export default {
         "Linux",
         "Docker",
         "Git",
-        "IoT",
-        "Network",
+        "Internet of Things",
+        "Computer Network",
       ],
       // qualifications
-      qualifications: ["Now challenging..."],
+      qualifications: [
+        {
+          name: "LPIC level 1",
+          date: "2021/07/24",
+        },
+        {
+          name: "応用情報技術者", //"Applied Information Technology Engineer Examination",
+          date: "2021/10/10",
+        },
+      ],
       // my works
       works: [
         {
@@ -115,15 +129,15 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 /* 小さな画面 */
-@media screen and (min-width: 300px) {
+@media screen and (max-width: 600px) {
   .vcenter {
-    width: 500px;
+    width: 400px;
     text-align: center;
     display: inline-block;
   }
 }
 /* 大きな画面 */
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   .vcenter {
     width: 900px;
     text-align: center;
@@ -155,7 +169,7 @@ export default {
   display: inline;
 }
 .vertical ::v-deep ul {
-  width: 500px;
+  width: 400px;
   padding-left: 0;
   list-style: none;
   display: inline-block;
@@ -196,7 +210,7 @@ export default {
   display: inline;
 }
 .horizontal ::v-deep ul {
-  width: 500px;
+  width: 400px;
   padding-left: 0;
   list-style: none;
   display: inline-block;

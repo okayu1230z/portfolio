@@ -12,6 +12,7 @@
         <b-img v-bind:src="pskill.icon" width="32" :alt="pskill.name" />
       </li>
     </ul>
+    <br />
     <ul>
       <li>
         <h4 class="tall noline">Framework:</h4>
