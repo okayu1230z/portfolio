@@ -102,11 +102,11 @@ export default {
         },
         {
           title: "Compact-CAS",
-          image: require("@/assets/png/vue.png"), // TODO: change image
+          image: require("@/assets/png/ccas.jpg"),
           body: "This is Compact-CAS (Compact-CameraAndStorage), which provides cameras, storage, and even a web service to check the data. Based on this manual, you can inexpensively build a surveillance camera system for which you want historical data.",
           link: "https://github.com/okayu1230z/c-cas",
-          work_active: false,
-          link_active: false,
+          work_active: true,
+          link_active: true,
         },
       ],
       // my article
